@@ -235,6 +235,8 @@ section {
 .contact-info iframe {
     width: 400px;
     height: 400px;
+    display: flex;
+    align-items: center;
 }
 
 .contact-info div {
