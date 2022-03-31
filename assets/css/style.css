@@ -1,13 +1,16 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 :root {
     --primary-color: #fce138;
     --secondary-color: #024e76;
     --tertiary-color: #39a6b2;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 body {
     color: var(--tertiary-color) ;
@@ -26,7 +29,6 @@ header {
     top: 0;
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
     background-position: 80%;
 }
@@ -37,7 +39,6 @@ header h1 {
     font-size: 36px;
     color: var(--primary-color);
     margin: 0;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -103,7 +104,6 @@ section {
     box-shadow: 0 0 10px rgb(252, 225, 56);
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -120,6 +120,7 @@ section {
     color: var(--secondary-color);
     width: 40%;
     margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .hero-form h3 {
     font-size: 24px;
@@ -172,6 +173,7 @@ section {
     width: 35%;
     text-align: right;
     margin: 3.5%;
+    color: #fff;
     font-size:  18px;
     line-height: 1.2;
 }
@@ -191,6 +193,10 @@ section {
     margin: 0 auto;
     text-align: center;
 }
+
+.steps { 
+    background: var(--primary-color);
+  }
 
 .step {
     background: var(--primary-color);
@@ -291,14 +297,6 @@ section {
     line-height: 1.3;
 }
 
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
-}
-
 .trainer-bio h3 {
     font-size: 28px;
 }
@@ -323,22 +321,15 @@ section {
 
 .contact-info iframe {
     height: 400px;
-    display: flex;
-    align-items: center;
 }
 
 .contact-info div {
-    width: 410px;
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    margin: 30px 0 0 60px;
+    color:white
 }
 
 .contact-info h3 {
     color: var(--primary-color);
     float: left;
-    justify-content: space-around;
 }
 
 .contact-info p, .contact-info address {
@@ -346,8 +337,6 @@ section {
     line-height: 1.5;
     font-size: 16px;
     font-style: normal;
-    float: left;
-    justify-content: space-around;
 }
 
 .contact-info a {
@@ -391,8 +380,8 @@ justify-content: space-between;
     margin: 15px;
   }
 
-  .contact-form input, .contact-form textarea {
-    border-radius: 15px;
+.contact-form input, .contact-form textarea {
+      border-radius: 15px;
       border: 1px solid var(--secondary-color);
       display: block;
       padding: 7px 15px;
@@ -402,7 +391,7 @@ justify-content: space-between;
       margin-bottom: 15px;
       margin-top: 5px;
       background-color: rgba(255,255,255, 0.75);
-  }
+}
 
 .contact-form button {
     border-radius: 15px;
@@ -499,7 +488,7 @@ justify-content: space-between;
     position: relative;
 }
   
-header hq {
+header h1 {
     width: 100%;
     text-align: center;
 }
@@ -511,13 +500,13 @@ header nav ul {
 }
 header nav ul li a {
     font-size: 20px;
-  }
+}
 
   footer h2, footer div {
     text-align: center;
     width: 100%;
-  }
 }
+
 .hero-cta, .hero-form {
     width: 100%;
   }
@@ -536,66 +525,67 @@ header nav ul li a {
   .contact-info iframe{
     flex: 1 100%;
   }
+}
 
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
-    section {
+ section {
       padding: 30px 15px;
-    }
+}
   
-    .step h3 {
+ .step h3 {
       flex: 1 100%;
       text-align: center;
-    }
+}
   
-    .step-info {
+ .step-info {
       flex: 2 100%;
       text-align: center;
       justify-content: center;
-    }
+}
   
-    .step-img {
+ .step-img {
       flex: 0 32%;
       margin-right: 0;
       margin-top: 15px;
       margin-bottom: 15px;
-    }
+}
   
-    .step-text {
+.step-text {
       flex: 100%;  
-    }
+}
   
-  }
+}
 
-  @media screen and (max-width: 575px) {
+@media screen and (max-width: 575px) {
 
-    .hero-form button {
+     .hero-form button {
       width: 100%;
-    }
+}
   
-    .section-title {
+ .section-title {
       width: 95%;
     }
   
-    .intro p {
+ .intro p {
       width: 100%;
-    }
+}
   
-    .trainer {
+ .trainer {
       flex: 0 100%;
-    }
+}
   
-    .contact-info {
+ .contact-info {
       text-align: center;
-    }
+}
   
-    .contact-info > * {
+ .contact-info > * {
       flex: 0 100%;
-    }
-  }
+}
 
-  .contact-form {
+
+.contact-form {
     order: 3;
-  }
- 
+}
+}
